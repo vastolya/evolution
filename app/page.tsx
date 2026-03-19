@@ -1,65 +1,111 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="h-screen w-screen relative bg-[#F8F7F7] bg-[url(/bg.svg)] bg-cover bg-center">
+      <header className="grid grid-cols-[1fr_auto_1fr] items-center py-20 px-20">
+        <div className="flex flex-col gap-3 justify-self-start">
+          <p className="font-normal text-[16px] leading-none tracking-normal">
+            Москва, ул. Большая Садовая, 14, стр. 6
+          </p>
+          <Link
+            href={"tel:89309900081"}
+            className="font-bold text-[24px] leading-none tracking-normal"
+          >
+            +7 (930) 990-00-81
+          </Link>
+        </div>
+
+        <div className="justify-self-center">
+          <Image src={"/logo.png"} alt="logo" width={390} height={127} />
+        </div>
+
+        <div className="flex flex-col gap-3 justify-self-end text-right">
+          <p className="font-normal text-[16px] leading-none tracking-normal">
+            Ежедневно
+          </p>
+          <p className="font-bold text-[24px] leading-none tracking-normal">
+            с 10:00 - 22:00
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+      </header>
+
+      <div className=" w-full text-center flex flex-col gap-3 pb-6">
+        <h1 className="font-bold text-[24px] leading-none tracking-normal">
+          Пространство восстановления ЭВОЛЮЦИЯ
+        </h1>
+        <h2 className="font-normal text-[16px] leading-none tracking-normal">
+          Это бережные уходы за кожей лица, инновационные аппаратные технологии
+          на службе здоровья, авторские <br /> массажи лица и тела,
+          профилактическая подология и глубокое расслабление с эффектом
+          невесомости <br /> в сухом флоатинге NUVOLA LEGERA, которые помогают
+          вам комфортно Эволюционировать к новым ресурсам
+        </h2>
+      </div>
+
+      <div className="w-full text-center bg-[#A0866A] py-14 text-white flex flex-col gap-3 ">
+        <p className="font-light text-[44px] leading-[1.18] tracking-normal uppercase">
+          Сайт на паузе, но не надолго!
+        </p>
+        <p className="font-normal text-[16px] leading-none tracking-normal">
+          Мы работаем над улучшением нашего сайта, и совсем скоро вы сможете
+          увидеть все новшества!
+        </p>
+      </div>
+
+      <div className="pt-6 px-20 flex justify-between items-end">
+        <div className="w-fit">
+          <div className="flex justify-between pb-14">
+            <div className="flex gap-5">
+              <Link
+                href={
+                  "https://max.ru/join/vHYs8sxgXpIyTO1Ev-kev_roCGGO_GzWUvgzKHeBfng"
+                }
+                target="_blank"
+              >
+                <Image src={"/tg.svg"} alt="logo" width={52} height={52} />
+              </Link>
+              <Link
+                href={
+                  "https://max.ru/join/vHYs8sxgXpIyTO1Ev-kev_roCGGO_GzWUvgzKHeBfng"
+                }
+                target="_blank"
+              >
+                <Image src={"/max.svg"} alt="logo" width={52} height={52} />
+              </Link>
+            </div>
+            <div className="flex gap-5">
+              <Link
+                href={
+                  "https://yandex.ru/maps/213/moscow/house/blagoveshchenskiy_pereulok_1a/Z04Ycw5mT0cDQFtvfXt3d3RjYQ==/?ll=37.598511%2C55.765702&z=17.1"
+                }
+                target="_blank"
+              >
+                <Image src={"/yandex.svg"} alt="logo" width={42} height={52} />
+              </Link>
+              <Link
+                href={
+                  "https://2gis.ru/moscow/search/%D0%91%D0%9B%D0%90%D0%93%D0%9E%D0%92%D0%95%D0%A9%D0%95%D0%9D%D0%A1%D0%9A%D0%98%D0%99%20%D0%9F%D0%95%D0%A0%D0%95%D0%A3%D0%9B%D0%9E%D0%9A%2C%201%D0%90%2C%20%D0%9F%D0%9E%D0%94%D0%AA%D0%95%D0%97%D0%94%204%20%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0/firm/70000001082376713/37.596719%2C55.766806?m=37.590342%2C55.767188%2F13.94"
+                }
+                target="_blank"
+              >
+                <Image src={"/2gis.svg"} alt="logo" width={52} height={52} />
+              </Link>
+            </div>
+          </div>
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="/menu.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block font-light text-[44px] leading-[1.18] tracking-normal uppercase text-[#A0866A] bg-white py-5 px-16 hover:text-white hover:bg-[#A0866A] transition-all duration-300"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            меню услуг
           </a>
         </div>
-      </main>
-    </div>
+
+        <Image src={"/monkey.svg"} alt="logo" width={587} height={307} />
+      </div>
+    </main>
   );
 }
