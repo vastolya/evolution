@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import "./globals.css";
 import { Mulish } from "next/font/google";
 
@@ -7,6 +8,11 @@ const mulish = Mulish({
   style: ["normal", "italic"],
   display: "swap",
 });
+
+export const metadata: Metadata = {
+  title: "Эволюция",
+  description: "Пространство восстановления",
+};
 
 export default function RootLayout({
   children,
