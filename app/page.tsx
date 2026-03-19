@@ -54,9 +54,7 @@ export default function Home() {
             <div className="order-2 md:order-1 flex justify-between  md:pb-14">
               <div className="flex gap-5">
                 <Link
-                  href={
-                    "https://max.ru/join/vHYs8sxgXpIyTO1Ev-kev_roCGGO_GzWUvgzKHeBfng"
-                  }
+                  href={"https://t.me/prostranstvo_evolution"}
                   target="_blank"
                   className="w-[44px] h-[44px] md:w-[52px] md:h-[52px] relative"
                 >
