@@ -29,7 +29,10 @@ export default function Home() {
 
     const deltaY = startY - currentY;
 
-    if (deltaY > 50) {
+    // Если почти не двигали (меньше 10px), считаем это кликом
+    if (Math.abs(deltaY) < 10) {
+      setIsExpanded(!isExpanded);
+    } else if (deltaY > 50) {
       setIsExpanded(true);
     } else if (deltaY < -50) {
       setIsExpanded(false);
