@@ -56,8 +56,8 @@ export default function Home() {
     };
   }, [isDragging]);
   return (
-    <main className="overflow-hidden min-h-screen w-screen relative bg-[#F8F7F7] bg-[url(/bg.svg)] bg-cover bg-center flex flex-col ">
-      <div className="px-5 py-8 md:px-20 md:py-20 md:h-screen flex flex-col gap-8 md:gap-0 md:justify-between">
+    <main className="overflow-hidden min-h-screen w-screen relative bg-[#F8F7F7] bg-[url(/bg.svg)] bg-cover bg-center flex flex-col">
+      <div className="px-5 py-8 md:px-20 md:py-20 md:h-screen md:min-h-[1080px] flex flex-col gap-8 md:gap-0 md:justify-between">
         <header className="flex flex-col gap-5 md:gap-0 md:grid grid-cols-[1fr_auto_1fr] md:items-center ">
           <div className="order-2 md:order-1 flex flex-col gap-2 md:gap-3 justify-self-start">
             <p className="font-normal text-base leading-[122%] md:leading-none tracking-normal text-[#7A7570] md:text-[#22252D]">
