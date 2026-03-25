@@ -9,7 +9,7 @@ export default function Home() {
       <header className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 mt-[5vh] md:mt-[7vh]  w-full px-[5vw] md:px-[6.67vw] mx-auto z-10">
         <div className="md:col-start-2 w-full max-w-[80vw] md:max-w-[27.7vw] aspect-532/173 relative mx-auto">
           <Image
-            src={"/logo.png"}
+            src={"/logo.svg"}
             alt="Evolution logo"
             sizes="(max-width: 768px) 80vw, 27.7vw"
             fill
