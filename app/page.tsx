@@ -61,7 +61,7 @@ export default function Home() {
         Сайт на паузе, но не надолго!
       </p>
 
-      <div className="flex flex-col md:flex-row flex-1 justify-between md:items-end bg-[#A0866A]/25 px-[5vw] md:px-[4vw] pb-8 md:pb-[4vh] gap-8 md:gap-[2vw]">
+      <div className="grid grid-cols-1 md:grid-cols-3 flex-1 justify-between md:items-end bg-[#A0866A]/25 px-[5vw] md:px-[4vw] pb-8 md:pb-[4vh] gap-8 md:gap-[2vw]">
         <div className="flex flex-col justify-end gap-4 md:gap-[2vh] w-full md:w-auto md:flex-1 md:max-w-[30vw]">
           <div className="w-full text-center">
             <a
@@ -149,8 +149,8 @@ export default function Home() {
             все новшества!
           </p>
         </div>
-
-        <div className="hidden md:flex flex-col gap-4 md:gap-[2vh] justify-end relative w-full max-w-[300px] md:max-w-[22vw] aspect-[423/222] mx-auto md:mx-0 md:flex-1">
+        <div className="relative w-full h-full flex justify-end">
+        <div className="hidden md:flex flex-col gap-4 md:gap-[2vh] justify-end relative w-full max-w-[300px] md:max-w-[22vw] aspect-423/222 items-end mx-auto md:mx-0 md:flex-1">
           <Image
             src={"/monkey.svg"}
             alt="Monkey illustration"
@@ -158,6 +158,7 @@ export default function Home() {
             sizes="(max-width: 768px) 300px, 22vw"
             className="object-contain"
           />
+        </div>
         </div>
 
         <div className="flex md:hidden justify-center">
